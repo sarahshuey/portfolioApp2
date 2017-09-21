@@ -5,7 +5,7 @@ export default class About extends Component {
   render() {
 
 let otherStyle = {
-  "backgroundColor": "#00FFCE",
+  "backgroundColor": "#bce9f4",
       "backgroundSize": "cover",
       "height": "50%",
       "padding": "100px",
@@ -13,7 +13,7 @@ let otherStyle = {
       "textAlign":"center"
     }
     let aboutStyle = {
-      "backgroundColor": "#00FFCE",
+      "backgroundColor": "#bce9f4",
       "backgroundSize": "cover",
       "backgroundPosition": "top",
       "height": "50%",
@@ -24,24 +24,14 @@ let otherStyle = {
     return (
       <div className="app-body about offset col-lg-10 col-lg-offset-1">
         <section className="row" style={aboutStyle}>
-          <article className="col-lg-6 col-lg-offset-3">
-            <h2 className="headings">
-              ME!
-            </h2>
             <hr/>
-            <p className="primary-text">
-              This is my About section, I am a junior developer learning React!!!
+            <p style={{color:"#0d0056", textAlign:"center"}} className="primary-text">
+              Hello, my name is Sarah Shuey and I am a junior developer learning React!
             </p>
-            <p className="primary-text">
-              I have lived in Austin for 4 years, I have a dog named Ginger and my hobbies include shopping, cleaning, organizing, and being outdoors
+            <p style={{color:"#0d0056", textAlign:"center"}} className="primary-text">
+              I have lived in Austin for 4 years and have a dog named Ginger. My hobbies include shopping, cleaning, organizing, and being outdoors.
             </p>
-          </article>
-        </section>
-        <section className="row" style= {otherStyle}>
-          <article className="col-lg-5">
-            <hr/>
-            <p className="primary-text">This is my other section of about me. I am from Dallas Tx, I have 2 brothers and 1 sister. I am the youngest member of my family and also the shortest. </p>
-          </article>
+            <p style={{color:"#0d0056", textAlign:"center"}} className="primary-text">I am from Dallas Tx, I have 2 brothers and 1 sister. I am the youngest member of my family and also the shortest. </p>
         </section>
       </div>
     );

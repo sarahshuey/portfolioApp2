@@ -17,8 +17,8 @@ export default class BaseLayout extends Component {
     let headerStyle = {
       "textAlign": "center",
       "height": "200px",
-      "color": "#fff",
-      "backgroundColor": "#00FFCE",
+      "color": "#0d0056",
+      "backgroundColor": "#bce9f4",
       "backgroundSize": "cover",
       "backgroundPosition": "center",
       "boxShadow":"rgba(0, 0, 0, 0.22) -2px 9px 5px 0px",
@@ -27,17 +27,20 @@ export default class BaseLayout extends Component {
     }
     let navTitle = {
       "fontFamily": "Arizonia",
-      "fontSize": "30px",
-      "backgroundColor": "#00FFCE",
+      "fontSize": "20px",
+      "backgroundColor": '#bce9f4',
       "textAlign": "center",
       "textDecoration": "none",
       "display":"flex",
       "flexDirection": "row",
-      "displayFlex": "center"
+      "displayFlex": "center",
+      "paddingLeft":"10px",
+      "color":"#0d0056"
     }
     let footer = {
-      "backgroundColor": "#A18CFF",
-      "textAlign": "center"
+      "backgroundColor": "#bce9f4",
+      "textAlign": "center",
+      "color":"#0d0056"
     }
 
     return (
@@ -47,13 +50,19 @@ export default class BaseLayout extends Component {
             <div style={navTitle} className="navbar-header">
               <ul style={navTitle} className="nav navbar-nav">
                 <li style={navTitle}>
-                  <NavLink to="/">Home</ NavLink >
+                  <NavLink style={navTitle} activeClassName="selected" to="/">Home</ NavLink >
                 </li>
                 <li style={navTitle}>
-                <NavLink to="/about"> About </NavLink>
+                <NavLink style={navTitle} activeClassName="selected" to="/about"> About </NavLink>
               </li>
                 <li style={navTitle}>
-                  <NavLink  to="/portfolio"> Portfolio </NavLink>
+                  <NavLink  style={navTitle} activeClassName="selected" to="/portfolio"> Portfolio </NavLink>
+                </li>
+                <li style={navTitle}>
+                <NavLink style={navTitle} activeClassName="selected" className="nav-link" to="/contacts">Contacts</NavLink>
+                </li>
+                <li style={navTitle}>
+                <NavLink style={navTitle} activeClassName="selected" className="nav-link" to="/references">References</NavLink>
                 </li>
               </ul>
             </div>
@@ -68,7 +77,7 @@ export default class BaseLayout extends Component {
                 Sarah Shuey
               </div>
               <div className="subtitle" style={subtitleStyle}>
-                developer
+                Junior Developer
               </div>
             </div>
           </div>
@@ -80,7 +89,7 @@ export default class BaseLayout extends Component {
         <footer style={footer} className="col-lg-11">
           <span className="footer-title">Sarah Shuey </span>
           <span>
-            Austin Tx | (512) 000-9999
+            Austin Tx | (214) 437 7729
           </span>
         </footer>
       </div>

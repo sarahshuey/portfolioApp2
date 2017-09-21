@@ -9,6 +9,8 @@ import BaseLayout from './components/BaseLayout'
 import Home from './components/Home'
 import About from './components/About'
 import Portfolio from './components/Portfolio'
+import Contacts from './components/Contacts'
+import References from './components/References'
 
 
 ReactDOM.render(
@@ -17,7 +19,9 @@ ReactDOM.render(
     <Switch>
       <Route path="/Portfolio" component={Portfolio} />
       <Route path="/About" component={About} />
-      <Route path="/" component={Home}/>
+      <Route exact path="/" component={Home}/>
+      <Route path="/Contacts" component={Contacts} />
+      <Route path="/References" component={References} />
     </Switch>
     </BaseLayout>
   </BrowserRouter>
