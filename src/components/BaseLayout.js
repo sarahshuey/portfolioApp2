@@ -49,8 +49,11 @@ export default class BaseLayout extends Component {
           <div className="container-fluid">
             <div style={navTitle} className="navbar-header">
               <ul style={navTitle} className="nav navbar-nav">
+              <li style={navTitle}>
+                <NavLink style={navTitle} activeClassName="selected" to="/">Splash Page</ NavLink >
+              </li>
                 <li style={navTitle}>
-                  <NavLink style={navTitle} activeClassName="selected" to="/">Home</ NavLink >
+                  <NavLink style={navTitle} activeClassName="selected" to="/home">Home</ NavLink >
                 </li>
                 <li style={navTitle}>
                 <NavLink style={navTitle} activeClassName="selected" to="/about"> About </NavLink>

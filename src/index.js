@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles/index.css';
-// import App from './components/App';
+import App from './components/App';
 import registerServiceWorker from './registerServiceWorker';
 
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
@@ -17,9 +17,10 @@ ReactDOM.render(
   <BrowserRouter>
   <BaseLayout>
     <Switch>
+      <Route exact path="/" component={App}/>
       <Route path="/Portfolio" component={Portfolio} />
       <Route path="/About" component={About} />
-      <Route exact path="/" component={Home}/>
+      <Route path ="/Home" component={Home}/>
       <Route path="/Contacts" component={Contacts} />
       <Route path="/References" component={References} />
     </Switch>
